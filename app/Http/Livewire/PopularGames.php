@@ -17,7 +17,7 @@ class PopularGames extends Component
         $before = Carbon::now()->subMonths(2)->timestamp;
         $after = Carbon::now()->addMonths(2)->timestamp;
 
-       $popularGamesUnformatted = Cache::remember('popular-games', 7, function () use ($before, $after) {
+        $popularGamesUnformatted = Cache::remember('popular-games', 7, function () use ($before, $after) {
             // sleep(3);
             return Http::withHeaders(config('services.igdb'))
                 ->withOptions([
@@ -33,6 +33,8 @@ class PopularGames extends Component
                 ->json();
         });
         $this->popularGames = $this->formatForView($popularGamesUnformatted);
+        
+        //dd(collect($popularGamesUnformatted));
     }
 
     public function render()

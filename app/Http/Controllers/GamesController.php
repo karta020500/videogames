@@ -86,15 +86,13 @@ class GamesController extends Controller
                 "
             ])->get('https://api-v3.igdb.com/games')
             ->json();
-
         abort_if(!$game, 404);
-
         return view('show', [
             'game' => $this->formatGameForView($game[0]),
         ]);
     }
     public function Crawler()
-    {   
+    {
         $article = [];
         $latestNews = 'https://forum.gamer.com.tw/B.php?bsn=18966';
         $client = new Client();
@@ -107,8 +105,8 @@ class GamesController extends Controller
         $crawler = $crawler
             ->filter('.b-list__main__title')
             ->reduce(function (Crawler $node, $i) {
-            global $article;
-            $article[] = $node->text();
+                global $article;
+                $article[] = $node->text();
             });
         var_dump($GLOBALS['article']);
     }
@@ -132,7 +130,7 @@ class GamesController extends Controller
             'similarGames' => collect($game['similar_games'])->map(function ($game) {
                 return collect($game)->merge([
                     'coverImageUrl' => array_key_exists('cover', $game)
-                        ? Str::replaceFirst('thumb','cover_big', $game['cover']['url'])
+                        ? Str::replaceFirst('thumb', 'cover_big', $game['cover']['url'])
                         : 'https://via.placeholder.com/264x352',
                     'rating' => isset($game['rating']) ? round($game['rating']).'%' : null,
                     'platforms' => array_key_exists('platforms', $game)

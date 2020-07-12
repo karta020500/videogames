@@ -16,7 +16,7 @@
                     {{ $game['platforms'] }}
                 </div>
                 <p class="mt-6 text-gray-400 hidden lg:block">
-                   {{ $game['platforms'] }}
+                   {{ $game['summary'] }}
                 </p>
             </div>
         </div> <!-- end game -->
