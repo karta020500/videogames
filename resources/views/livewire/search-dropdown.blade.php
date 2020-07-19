@@ -45,7 +45,7 @@
                 </ul>
             @else
                 <div class="px-3 py-3">No results for "{{ $search }}"</div>
-            @endif
+            @endif  
         </div>
     @endif
 </div>

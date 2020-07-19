@@ -10,7 +10,7 @@
                 <h2 class="font-semibold text-4xl leading-tight mt-1">{{ $game['name'] }}</h2>
                 <div class="text-gray-400">
                     <span>
-                        {{ $game['genres'] }}
+                        {{ $game['genres'] }}   
                     </span>
                     &middot;
                     <span>{{ $game['involvedCompanies'] }}</span>

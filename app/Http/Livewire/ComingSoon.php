@@ -30,7 +30,6 @@ class ComingSoon extends Component
 
         $this->comingSoon = $this->formatForView($comingSoonUnformatted);
     }
-
     public function render()
     {
         return view('livewire.coming-soon');

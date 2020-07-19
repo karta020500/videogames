@@ -27,7 +27,7 @@ class PopularGames extends Component
                         & (first_release_date >= {$before}
                         & first_release_date < {$after});
                         sort popularity desc;
-                        limit 12;
+                        limit 12;
                     "
                 ])->get('https://api-v3.igdb.com/games')
                 ->json();
