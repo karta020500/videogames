@@ -19,7 +19,7 @@
                    {{ $game['summary'] }}
                 </p>
             </div>
-        </div> <!-- end game -->
+        </div> <!-- end game --> 
     @empty
         @foreach (range(1, 3) as $game)
             <div class="game bg-gray-800 rounded-lg shadow-md flex px-6 py-6">

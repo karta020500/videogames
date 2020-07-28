@@ -87,6 +87,7 @@ class GamesController extends Controller
             ])->get('https://api-v3.igdb.com/games')
             ->json();
         abort_if(!$game, 404);
+
         return view('show', [
             'game' => $this->formatGameForView($game[0]),
         ]);
