@@ -1,9 +1,5 @@
 ![screenshot](https://user-images.githubusercontent.com/4316355/82725361-69b40400-9caa-11ea-994d-85c41919ca96.png)
 
-# Laracasts Video Game Series
-
-Code for Laracasts video series: https://laracasts.com/series/build-a-video-game-aggregator
-
 ## Installation
 
 1. Clone the repo and `cd` into it
