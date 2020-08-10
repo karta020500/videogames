@@ -4,8 +4,9 @@ This project objective is to build a video game app that pulls data from the IGD
 
 ## Screenshots
 ![screenshot](https://github.com/karta020500/Videogames/blob/master/screenshot/screenshot01.png)
-![screenshot](https://github.com/karta020500/Videogames/blob/master/screenshot/screenshot02.png)
-![screenshot](https://github.com/karta020500/Videogames/blob/master/screenshot/screenshot03.png)
+|  <img src="https://github.com/karta020500/Videogames/blob/master/screenshot/screenshot02.png" width = "500" height = "300" /> | <img src="https://github.com/karta020500/Videogames/blob/master/screenshot/screenshot04.png" width = "330" height = "300" />  | 
+|:-------:|:-----:|
+|Result of reconstruction|Result comparison|
 
 ## Installation
 
