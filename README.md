@@ -1,4 +1,4 @@
-![screenshot](https://user-images.githubusercontent.com/4316355/82725361-69b40400-9caa-11ea-994d-85c41919ca96.png)
+![screenshot](https://github.com/karta020500/Videogames/blob/master/screenshot/screenshot01.png)
 
 ## Installation
 
